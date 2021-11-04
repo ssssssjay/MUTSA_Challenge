@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>character</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            /* background: chocolate; */
+        }
+        .face {
+            background:sandybrown;
+            width: 200px;
+            height: 300px;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+            position: relative;
+            border: 1px solid black;
+
+        }
+        .left {
+            background: white;
+            width: 22px;
+            height: 26px;
+            border-radius: 11px;
+            position: absolute;
+            top: 100px;
+            left: 50px;
+        }
+        .left2 {
+            background: black;
+            width: 16px;
+            height: 20px;
+            border-radius: 8px;
+            position: absolute;
+            top: 5px;
+            left: 4px;
+        }
+        .right {
+            background: white;
+            width: 22px;
+            height: 26px;
+            border-radius: 11px;
+            position: absolute;
+            top: 100px;
+            right: 50px;
+            /* position: absolute;
+            top: 100px;
+            left: 50px; */
+        }
+        .right2 {
+            background: black;
+            width: 16px;
+            height: 20px;
+            border-radius: 8px;
+            position: absolute;
+            top: 5px;
+            left: 2px;
+        }
+        .ear-left {
+            background: sandybrown;
+            width: 40px;
+            height: 100px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 10px;
+            position: absolute;
+            top: -70px;
+            left: 20px;
+            transform: rotate(-10deg);
+            border: 1px solid black;
+            z-index: -999;
+         
+        }
+        .ear-right {
+            background: sandybrown;
+            width: 40px;
+            height: 100px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 40px; 
+            position: absolute;
+            top: -70px;
+            right: 20px;
+            transform: rotate(10deg);
+            border: 1px solid black;
+            z-index: -999;
+
+        }
+        .mouth {
+            background: white;
+            width: 100px;
+            height: 50px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            position: absolute;
+            bottom: 30px;
+            left: 55px;
+            transform: rotate(-10deg);
+            border: 1px solid black;
+        }
+        /* .hair {
+            background: black;
+            width: 40px;
+            height: 40px;
+            border-top-left-radius: 60px;
+            border-top: 2px solid black;
+            border-left: 2px solid black;
+            position: absolute;
+            top: 120px;
+            right: 20px;
+            transform: rotate(20deg);
+            
+        } */
+        .nose {
+            width: 40px;
+            height: 30px;
+            background: brown;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            position: absolute;
+            top: 160px;
+            left: 80px;
+            border: 1px solid black;
+
+        }
+        /* .hair {
+            width: 30px;
+            height: 15px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-top: 1px solid black;
+            position: absolute;
+            top: 60px;
+            left: 40px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="face"></div>
+        <div class="left">  
+            <div class="left2"></div>
+        </div>
+
+        <div class="right">  
+            <div class="right2"></div>
+        </div>
+        <div class="ear-left"></div>
+        <div class="ear-right"></div>
+        <div class="nose"></div>
+        <div class="mouth"></div>
+        <div class="hair"></div>
+    
+
+
+
+
+    </div>    
+</body>
+</html>
