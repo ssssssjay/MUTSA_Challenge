@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card-flip</title>
+    <style>
+        .card-cont {
+            width: 300px;
+            height:400px;
+            perspective: 600px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .card-cont .card {
+            width: 300px;
+            height:400px;
+            border: 2px solid black;
+            border-radius: 20px;
+            backface-visibility: hidden;
+            transition: all 2s;
+        }
+        .card.front {
+            box-sizing: border-box;
+            padding: 20px;
+            background: crimson;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transform: scale(0.2) rotateY(0);
+        }
+        .card-cont:hover .card.front {
+            transform: scale(1.6) rotateY(720deg);
+        }
+        .card.back {
+            font-size: 60px;
+            font-weight: bolder;
+            background: lightgrey;
+            transform: scale(0.2) rotateY(-180deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card-cont:hover .card.back {
+            transform: scale(1.6) rotateY(540deg);
+        }
+        .card.front img {
+            width: 60px;
+        }
+        .one, .three {
+            display: flex;
+            justify-content: space-between;
+        }
+        .two {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card-cont">
+        <div class="card front">
+            <div class="one">
+                <img src="./outline_favorite_black_24dp.png" alt="">
+                <img src="./outline_favorite_black_24dp.png" alt="">
+            </div>
+            <div class="two">
+                <img src="./outline_favorite_black_24dp.png" alt="">
+            </div>
+            <div class="three">
+                <img src="./outline_favorite_black_24dp.png" alt="">
+                <img src="./outline_favorite_black_24dp.png" alt="">
+            </div>
+        </div>
+        <div class="card back">마.참.내.!</div>
+    </div>
+</body>
+</html>
